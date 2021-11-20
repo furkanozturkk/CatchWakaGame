@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Igb-6g-Ozt">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CatchWakaGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3K8-L5-Tds">
+                                <rect key="frame" x="61" y="88" width="292" height="56"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="47"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Skor:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NQQ-hg-Aph">
+                                <rect key="frame" x="20" y="150" width="374" height="25.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="En Yüksek Puan: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wov-3i-ZQ2">
+                                <rect key="frame" x="20" y="841" width="374" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="ghj-Ui-Hr2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.0027570370584726334" green="0.99619406461715698" blue="0.18508890271186829" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="NQQ-hg-Aph" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="0Le-56-Lab"/>
+                            <constraint firstItem="wov-3i-ZQ2" firstAttribute="trailing" secondItem="NQQ-hg-Aph" secondAttribute="trailing" id="2ut-68-eEy"/>
+                            <constraint firstItem="wov-3i-ZQ2" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="6qO-Jd-wo3"/>
+                            <constraint firstItem="3K8-L5-Tds" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="61" id="8MQ-Fd-sA7"/>
+                            <constraint firstItem="NQQ-hg-Aph" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="BAA-Wq-RIx"/>
+                            <constraint firstItem="3K8-L5-Tds" firstAttribute="centerX" secondItem="NQQ-hg-Aph" secondAttribute="centerX" id="Cg1-tM-gjv"/>
+                            <constraint firstItem="NQQ-hg-Aph" firstAttribute="top" secondItem="3K8-L5-Tds" secondAttribute="bottom" constant="6" id="XZ5-Od-dBd"/>
+                            <constraint firstItem="wov-3i-ZQ2" firstAttribute="leading" secondItem="NQQ-hg-Aph" secondAttribute="leading" id="hq9-UH-eUY"/>
+                            <constraint firstItem="3K8-L5-Tds" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="mqr-pq-xpw"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="n5D-KC-BXA"/>
+                    <connections>
+                        <outlet property="highscoreLabel" destination="wov-3i-ZQ2" id="Frn-jl-L5H"/>
+                        <outlet property="scoreLabel" destination="NQQ-hg-Aph" id="pDo-gG-c4K"/>
+                        <outlet property="timeLabel" destination="3K8-L5-Tds" id="bNp-It-3LB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042.0289855072465" y="104.46428571428571"/>
+        </scene>
+        <!--Start View Controller-->
+        <scene sceneID="MTm-7j-j9n">
+            <objects>
+                <viewController id="KJV-xX-vJX" customClass="StartViewController" customModule="CatchWakaGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hyg-wH-owN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="5OB-lE-LP3"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="eau-gR-R30"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="startGameVC" id="abT-Cg-X6e"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SPM-Zr-Iql" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="85.507246376811594" y="115.17857142857142"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="PeM-gf-U4q">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Igb-6g-Ozt" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wlI-1X-EjK">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="KJV-xX-vJX" kind="relationship" relationship="rootViewController" id="gEH-tc-mTF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f15-9U-vrD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-824.63768115942037" y="115.17857142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
